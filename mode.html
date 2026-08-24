@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Modes</title>
+    <style>
+       #body{
+            text-align: center;
+        }
+       h1{
+        text-align: center;
+       }
+    </style></head>
+    <body id="body">
+         
+        <h1 id="output">Upgrade the mode</h1>
+        <button onclick="Dark()">Darkmode</button>
+        <button onclick="Bright()">Brightmode</button>
+        <script>
+            function Dark()
+            {
+                document.getElementById('body').style.backgroundColor='black';
+                document.getElementById('output').style.color='white';
+            }
+            function Bright()
+            {
+                document.getElementById('body').style.backgroundColor='navy';
+                document.getElementById('output').style.color='white';
+            }
+        </script>
+    </body>
+</html>
