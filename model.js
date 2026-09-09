@@ -17,4 +17,4 @@ const DataBase = mongoose.Schema({
         default:Date.now
     }
 })
-GPUShaderModule.exports = mongoose.model("database",DataBase)
+Module.exports = mongoose.model("database",DataBase)
