@@ -4,7 +4,7 @@ const DataBase = require('./model');
 const app = express();
 mongoose.connect("mongodb://localhost:27017/").then(()=>console.log("database conneted")).catch((err)=> console.log(err.message))
 app.use(express.json())
-/*methods*/
+/*APIs*/
 app.post('/create_todo', async (req,res)=>{
     const{ title , Discription , Status}  = req.body;
     try{
